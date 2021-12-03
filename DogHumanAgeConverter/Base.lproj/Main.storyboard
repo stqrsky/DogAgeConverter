@@ -52,6 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="dogAgeTextField" destination="pQk-iP-3Aw" id="uyF-w0-ghZ"/>
+                        <outlet property="humanAgeLabel" destination="OXl-SN-W0P" id="ut7-bl-u51"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

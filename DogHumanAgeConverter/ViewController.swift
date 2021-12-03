@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var dogAgeTextField: UITextField!
     
+    @IBOutlet weak var humanAgeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,7 +21,8 @@ class ViewController: UIViewController {
     
     @IBAction func convertButtonDidTap(_ sender: UIButton) {
         let dogAge = Int(dogAgeTextField.text!) ?? 0
-        print(dogAge)
+        
+        humanAgeLabel.text = "Your dog is \(dogAge * 7) in human years old!"
     }
 
 }
