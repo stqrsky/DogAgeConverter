@@ -22,8 +22,11 @@ class ViewController: UIViewController {
     @IBAction func convertButtonDidTap(_ sender: UIButton) {
         let dogAge = Int(dogAgeTextField.text!) ?? 0
         
-        humanAgeLabel.text = "Your dog is \(dogAge * 7) in human years old!"
+        if dogAge > 20 {
+            humanAgeLabel.text = "Please give a realistic dog age."
+        } else {
+            humanAgeLabel.text = "Your dog is \(dogAge * 7) in human years old!"
+        }
     }
-
 }
 
